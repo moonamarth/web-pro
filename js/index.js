@@ -19,5 +19,10 @@ $(document).on('pageinit', '#Page0', function () {
       'transition': 'slide'
     });
   });
-
+  
+  $( "#magicButton" ).bind( "click", function(event, ui) {
+       $('#magic').removeClass('magictime puffIn');
+       $('#magic').addClass('magictime puffIn');
+  });
+  
 });
