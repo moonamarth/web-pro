@@ -1,6 +1,6 @@
 var pages = ['Page0', 'Page1', 'Page2'];
 $(document).on('pageinit', '#Page0', function () {
-  
+    
   $(document).on("swiperight", function () {
     var pageId = $.mobile.activePage.attr('id');
     var idx = pages.indexOf(pageId);

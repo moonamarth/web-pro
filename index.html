@@ -8,21 +8,12 @@
 	<link rel="stylesheet" href="css/kindling.css">
 	<link rel="stylesheet" href="css/jquery.mobile.pagination.css">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="css/glide.core.css">
-	<link rel="stylesheet" href="css/glide.theme.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/index.css">
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/jquery.mobile.pagination.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/jquery.glide.min.js"></script>
-    <script>
-        $("#Glide").glide({
-            type: "carousel"
-        });
-    </script>    
+	
+
 </head>
 
 <body>
@@ -47,6 +38,28 @@
 	<!-- GOOGLE Fonts : https://www.google.com/fonts - https://developers.google.com/fonts/docs/getting_started-->
 	<h1 style="font-family: 'Tangerine', serif;">Your text</h1>
 	
+	
+    <div class="your-class">
+       <div>
+		<div class="row">
+			<div class="span-4"><a class="ui-btn ui-btn-inline">phase1</a></div>
+			<div class="span-8"><h1>Magic</h1></div>
+		</div>
+	   </div>
+       <div>
+	   <div class="row">
+			<div class="span-4"><a class="ui-btn ui-btn-inline">phase2</a></div>
+			<div class="span-8"><h1>Magic</h1></div>
+		</div>
+	   </div>
+       <div>
+	    <div class="row">
+			<div class="span-4"><a class="ui-btn ui-btn-inline">phase3</a></div>
+			<div class="span-8"><h1>Magic</h1></div>
+		</div>
+	    </div>
+    </div>
+
 	<!-- JQM Pagination : https://www.filamentgroup.com/lab/jquery-mobile-pagination-plugin.html-->
 	<ul data-role="pagination">
        <li class="ui-pagination-prev"><a href="#Page2">Prev</a></li>
@@ -58,8 +71,35 @@
   <div data-role="header" data-position="fixed" data-theme="b">
     <h3>B</h3>
   </div>
-  <div class="ui-content">
-    <h1 style="text-align:center; font-size:60px;">Page B</h1>
+  <div role="main" class="ui-content">
+    
+    <h1 style="font-family: 'Tangerine', serif;">Your text</h1>
+	
+	<div class="your-class">
+       <div>
+		<div class="row">
+			<div class="span-4"><a class="ui-btn ui-btn-inline">phase1</a></div>
+			<div class="span-8"><h1>Magic</h1></div>
+		</div>
+	   </div>
+       <div>
+	   <div class="row">
+			<div class="span-4"><a class="ui-btn ui-btn-inline">phase2</a></div>
+			<div class="span-8"><h1>Magic</h1></div>
+		</div>
+	   </div>
+       <div>
+	    <div class="row">
+			<div class="span-4"><a class="ui-btn ui-btn-inline">phase3</a></div>
+			<div class="span-8"><h1>Magic</h1></div>
+		</div>
+	    </div>
+    </div>
+
+	<ul data-role="pagination">
+       <li class="ui-pagination-prev"><a href="#Page0">Prev</a></li>
+       <li class="ui-pagination-next"><a href="#Page2">Next</a></li>
+    </ul>
   </div>
 </div>
 
@@ -67,11 +107,46 @@
   <div data-role="header" data-position="fixed" data-theme="b">
     <h3>C</h3>
   </div>
-  <div class="ui-content">
-    <h1 style="text-align:center; font-size:60px;">Page C</h1>
+  <div data-role="main" class="ui-content">
+    <div class="your-class">
+       <div>
+		<div >
+			<div ><a class="ui-btn ui-btn-inline">ph1</a></div>
+			<div ><h1>Magic</h1></div>
+		</div>
+	   </div>
+       <div>
+	   <div >
+			<div ><a class="ui-btn ui-btn-inline">ph2</a></div>
+			<div ><h1>Magic</h1></div>
+		</div>
+	   </div>
+       <div>
+	    <div >
+			<div ><a class="ui-btn ui-btn-inline">ph3</a></div>
+			<div ><h1>Magic</h1></div>
+		</div>
+	    </div>
+    </div>
+	<ul data-role="pagination">
+       <li class="ui-pagination-prev"><a href="#Page1">Prev</a></li>
+       <li class="ui-pagination-next"><a href="#Page0">Next</a></li>
+    </ul>
   </div>
 </div>
-
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        
+      });
+    });
+</script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.mobile.pagination.js"></script>
+<script src="js/index.js"></script>
 <script src="js/prefixfree.min.js"></script>
 <script src='js/kdcqz.js'></script>
 
